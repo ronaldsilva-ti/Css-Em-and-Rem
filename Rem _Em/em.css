@@ -1,0 +1,21 @@
+/* 
+    2em -> 2 vezes o valor do PAI desse elemento
+*/
+
+/* HTML o valor é 16px, como não define em nenhum outro elemento ele pega do body */
+
+.texto {
+  font-size: 1em; /* 1em -16px, 2em - 32px */
+}
+
+.texto h1 {
+  font-size: 2em; /*  2 * (pai = texto) */
+}
+
+.texto p {
+  /* margin, padding e border -> ele pega o valor local, pegando valor do font-size */
+  border: 1em solid #000;
+  font-size: 2em;
+}
+
+/* REM -> não olha pro pai e sim pro documento(padrão navegador)*/
